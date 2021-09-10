@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PigV1</string>
+    <string name="title_list">列表</string>
+    <string name="title_add">添加</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home_user">客户清单</string>
+    <string name="home_pig">猪清单</string>
+    <string name="home_check">账单</string>
+</resources>
