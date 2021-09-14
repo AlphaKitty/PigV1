@@ -1,7 +1,7 @@
 package com.zyl.pigv1.service.pojo;
 
-import java.util.Date;
 import java.io.Serializable;
+import java.util.Date;
 
 import lombok.Data;
 
@@ -67,6 +67,5 @@ public class Pig implements Serializable {
      * 备注
      */
     private String comment;
-
 
 }

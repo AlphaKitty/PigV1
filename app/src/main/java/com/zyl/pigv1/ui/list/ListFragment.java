@@ -12,7 +12,13 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.zyl.pigv1.R;
+import com.zyl.pigv1.common.async.Async;
 import com.zyl.pigv1.databinding.FragmentListBinding;
+import com.zyl.pigv1.service.pojo.User;
+
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import java.util.stream.Collectors;
 
 public class ListFragment extends Fragment {
 
@@ -30,11 +36,18 @@ public class ListFragment extends Fragment {
         View root = binding.getRoot();
 
         ListView listView = root.findViewById(R.id.list_view);
+        List<User> users = null;
 
-        String[] data = {"肖申克的救赎", "这个杀手不太冷", "霸王别姬", "泰坦尼克号", "瓦力",
-                "三傻大闹宝莱坞", "放牛班的春天", "千与千寻", "鬼子来了", "星际穿越"};
+        try {
+            users = Async.getUsers.execute().get();
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
 
-        ArrayAdapter<String> array = new ArrayAdapter<String>(container.getContext(), android.R.layout.simple_list_item_1, data);
+        assert users != null;
+        List<String> nameList = users.stream().map(User::getName).collect(Collectors.toList());
+
+        ArrayAdapter<String> array = new ArrayAdapter<>(container.getContext(), android.R.layout.simple_list_item_1, nameList);
 
         listView.setAdapter(array);
         return root;

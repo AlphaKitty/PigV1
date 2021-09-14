@@ -1,17 +1,26 @@
 package com.zyl.pigv1.activity.user;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.zyl.pigv1.R;
 import com.zyl.pigv1.databinding.ActivityUserBinding;
+import com.zyl.pigv1.service.pojo.User;
 
 public class UserActivity extends AppCompatActivity {
 
@@ -34,5 +43,15 @@ public class UserActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
     }
+
+//    public void saveUser(View view) {
+//        EditText name = view.findViewById(R.id.userNameText);
+//        EditText phone = view.findViewById(R.id.userPhoneText);
+//        EditText address = view.findViewById(R.id.userAddressText);
+//        User user = new User();
+//        user.setName(name.getText().toString());
+//        user.setPhone(phone.getText().toString());
+//        user.setAddress(address.getText().toString());
+//    }
 
 }
