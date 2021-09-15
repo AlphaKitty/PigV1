@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -39,7 +40,7 @@ public class ListFragment extends Fragment {
         List<User> users = null;
 
         try {
-            users = Async.getUsers.execute().get();
+            users = Async.getUsers().execute().get();
         } catch (ExecutionException | InterruptedException e) {
             e.printStackTrace();
         }
@@ -50,6 +51,11 @@ public class ListFragment extends Fragment {
         ArrayAdapter<String> array = new ArrayAdapter<>(container.getContext(), android.R.layout.simple_list_item_1, nameList);
 
         listView.setAdapter(array);
+
+        listView.setOnItemClickListener((adapterView, view, position, id) -> {
+
+        });
+
         return root;
     }
 
