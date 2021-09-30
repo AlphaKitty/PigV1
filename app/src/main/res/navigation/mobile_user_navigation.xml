@@ -3,19 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_list">
+    app:startDestination="@+id/navigation_user_list">
 
     <fragment
-        android:id="@+id/navigation_list"
-        android:name="com.zyl.pigv1.ui.list.ListFragment"
+        android:id="@+id/navigation_user_list"
+        android:name="com.zyl.pigv1.ui.list.UserListFragment"
         android:label="@string/title_list"
-        tools:layout="@layout/fragment_list" />
+        tools:layout="@layout/fragment_user_list" />
 
     <fragment
-        android:id="@+id/navigation_add"
-        android:name="com.zyl.pigv1.ui.add.AddFragment"
+        android:id="@+id/navigation_user_add"
+        android:name="com.zyl.pigv1.ui.add.UserAddFragment"
         android:label="@string/title_add"
-        tools:layout="@layout/fragment_add" />
+        tools:layout="@layout/fragment_user_add" />
 
 <!--    <fragment-->
 <!--        android:id="@+id/navigation_notifications"-->

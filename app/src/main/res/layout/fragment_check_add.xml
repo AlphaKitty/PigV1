@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add.CheckAddFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/cardview_shadow_end_color"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="送猪人"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:divider="@color/cardview_shadow_end_color"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/userSelectBtn"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:onClick="chooseInUser"
+                android:text="选择"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="姓名"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/userNameText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:editable="false" />
+
+            <TextView
+                android:id="@+id/idView"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="编号"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/userIdText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/userPhoneText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="送猪时间" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:divider="@color/cardview_shadow_end_color"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/dateSelectBtn"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:onClick="chooseDate"
+                android:text="选择"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pigSumTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="猪信息" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:divider="@color/cardview_shadow_end_color"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <Button
+                android:id="@+id/pigInfoBtn"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:onClick="pigInfo"
+                android:text="详情"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            <EditText
+                android:id="@+id/pigSumEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/payTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="付款方式" />
+
+        <EditText
+            android:id="@+id/payTypeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/commentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备注" />
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/theDayTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当日结清" />
+
+        <EditText
+            android:id="@+id/theDayEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSaveCheck"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="保存" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,12 @@
 package com.zyl.pigv1;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.zyl.pigv1.activity.check.CheckActivity;
 import com.zyl.pigv1.activity.user.UserActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    public void clickToPig(View view) {
-//        Intent intent = new Intent();
-//        intent.setClass(MainActivity.this, PigActivity.class);
-//        startActivity(intent);
-//    }
+    public void clickToCheck(View view) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, CheckActivity.class);
+        startActivity(intent);
+    }
 }

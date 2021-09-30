@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.pig.PigAddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/cardview_shadow_end_color"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/pigId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="猪编号"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/pigIdEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pigType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="类型"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/pigTypeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pigQuality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="质量"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/pigQualityEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pigWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="重量"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/pigWeightEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pigPerPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单价"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <EditText
+            android:id="@+id/pigPerPriceEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnSaveCheck"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="保存" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

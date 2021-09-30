@@ -17,7 +17,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <Button-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:layout_marginTop="230dp"
+        android:background="#A54CAF"
+        android:onClick="clickToCheck"
+        android:text="@string/home_check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <Button-->
 <!--        android:id="@+id/button2"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="154dp"-->

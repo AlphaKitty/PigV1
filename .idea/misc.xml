@@ -3,13 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/activity_check.xml" value="0.3828125" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/activity_main.xml" value="0.2749094202898551" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/activity_pig.xml" value="0.3828125" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/activity_pig_list.xml" value="0.36822916666666666" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/activity_pig_list_item.xml" value="0.3828125" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/activity_user.xml" value="0.3828125" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/formcommonlist.xml" value="0.3828125" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_add.xml" value="0.33" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_check_add.xml" value="0.3828125" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_check_list.xml" value="0.3828125" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_home.xml" value="0.21614583333333334" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_list.xml" value="0.22" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_notifications.xml" value="0.25" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_user_add.xml" value="0.3828125" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/fragment_user_list.xml" value="0.3828125" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/my_menu.xml" value="0.21614583333333334" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/layout/rtu_item.xml" value="0.3828125" />
+        <entry key="..\:/workspace/android/PigV1/app/src/main/res/menu/bottom_nav_check_menu.xml" value="0.21614583333333334" />
         <entry key="..\:/workspace/android/PigV1/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3828125" />
       </map>
     </option>

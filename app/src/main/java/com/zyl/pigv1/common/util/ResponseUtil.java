@@ -9,7 +9,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.zyl.pigv1.common.dto.PigResponse;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 import okhttp3.Response;
@@ -25,6 +24,9 @@ public class ResponseUtil {
      */
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public static <T> T getServiceResponse(Response response, Class<T> clazz) {
+        if (null == response) {
+            return null;
+        }
         if (response.isSuccessful()) {
 
             String resultStr = null;
@@ -33,6 +35,7 @@ public class ResponseUtil {
                 resultStr = Objects.requireNonNull(response.body()).string();
 //                resultStr = new String(Objects.requireNonNull(response.body()).bytes(), StandardCharsets.UTF_8);
             } catch (IOException e) {
+                // TODO 异常处理
                 e.printStackTrace();
             }
             return JSON.parseObject(resultStr, clazz);
